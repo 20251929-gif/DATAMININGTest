@@ -1,12 +1,10 @@
-import { Component, signal } from '@angular/core';
-import { RouterOutlet } from '@angular/router';
+import { Component } from '@angular/core';
+import { CsvCleanerComponent } from './components/csvcleaning.component';
 
 @Component({
-  imports: [RouterOutlet],
   selector: 'app-root',
-  styleUrl: './app.css',
-  templateUrl: './app.html',
+  standalone: true,
+  imports: [CsvCleanerComponent],
+  template: `<app-csv-cleaner />`
 })
-export class App {
-  protected readonly title = signal('DATSCI2-Final');
-}
+export class App {}
