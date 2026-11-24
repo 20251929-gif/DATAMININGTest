@@ -1,0 +1,2 @@
+// For Backend : py -m uvicorn main:app --reload
+// For Frontend(Angular) : npx ng serve
